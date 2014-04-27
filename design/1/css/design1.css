@@ -1,0 +1,72 @@
+.zigzag {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.8) 0px 1px 2px);
+}
+.zigzag:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 10px;
+}
+
+.container1 {
+    width: 100%;
+    height: 343px;
+    background: #FFFFFF;
+}
+
+.container2 {
+    background: #2989B6;
+}
+.container2:before {
+    background:
+        linear-gradient(
+            45deg, transparent 33.333%,
+            #2989B6 33.333%, #2989B6 66.667%,
+            transparent 66.667%
+        ),
+        linear-gradient(
+            -45deg, transparent 33.333%,
+            #2989B6 33.333%, #2989B6 66.667%,
+            transparent 66.667%
+        );
+    background-size: 20px 40px;
+}
+.container3 {
+    background: #4AFDCB;
+}
+.container3:before {
+    background:
+        linear-gradient(
+            45deg, transparent 33.333%,
+            #4AFDCB 33.333%, #4AFDCB 66.667%,
+            transparent 66.667%
+        ),
+        linear-gradient(
+            -45deg, transparent 33.333%,
+            #4AFDCB 33.333%, #4AFDCB 66.667%,
+            transparent 66.667%
+        );
+    background-size: 20px 40px;
+}
+.container4 {
+    background: #05D51E;
+}
+.container4:before {
+    background:
+        linear-gradient(
+            45deg, transparent 33.333%,
+            #05D51E 33.333%, #05D51E 66.667%,
+            transparent 66.667%
+        ),
+        linear-gradient(
+            -45deg, transparent 33.333%,
+            #05D51E 33.333%, #05D51E 66.667%,
+            transparent 66.667%
+        );
+    background-size: 20px 40px;
+}

@@ -1,0 +1,29 @@
+body {
+    background: pink;
+}
+
+.list-holder {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.holder {
+    height: 100px;
+}
+
+.holder1 {
+    background: #FFFFFF;
+}
+
+.holder2 {
+    background: #2989B6;
+}
+
+.holder3 {
+    background: #4AFDCB;
+}
+
+.holder4 {
+    background: #05D51E;
+}

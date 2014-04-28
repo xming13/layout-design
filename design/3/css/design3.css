@@ -1,0 +1,103 @@
+body {
+    background: pink;
+}
+
+.clock-holder {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background: url(../img/earth.png) no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.hour-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 600px;
+    width: 9px;
+    background: url(../img/hour-hand.png) no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.minute-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 600px;
+    width: 9px;
+    background: url(../img/minute-hand.png) no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.second-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 600px;
+    width: 9px;
+    background: url(../img/second-hand.png) no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.label-hour {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.label-hour-1 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(30deg) translate(0px, -250px);
+}
+.label-hour-2 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(60deg) translate(0px, -250px);
+}
+.label-hour-3 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(90deg) translate(0px, -250px);
+}
+.label-hour-4 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(120deg) translate(0px, -250px);
+}
+.label-hour-5 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(150deg) translate(0px, -250px);
+}
+.label-hour-6 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) translate(0px, -250px);
+}
+.label-hour-7 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(210deg) translate(0px, -250px);
+}
+.label-hour-8 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(240deg) translate(0px, -250px);
+}
+.label-hour-9 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(270deg) translate(0px, -250px);
+}
+.label-hour-10 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(300deg) translate(0px, -250px);
+}
+.label-hour-11 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(330deg) translate(0px, -250px);
+}
+.label-hour-12 {
+    background: red;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) translate(0px, -250px);
+}

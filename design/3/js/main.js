@@ -9,17 +9,11 @@ $(document).ready(function() {
 
         if (isFirstLoad) {
             var dateNow = new Date();
-            var hourNow = dateNow.getHours();
-            var minuteNow = dateNow.getMinutes();
-            var secondNow = dateNow.getSeconds();
-
-            hourRotate = dateNow.getHours() / 12 * 360 + dateNow.getMinutes() / 2  + dateNow.getSeconds() / 120 + "deg";
-            minuteRotate = dateNow.getMinutes() / 60 * 360 + 0.1 * dateNow.getSeconds() + "deg";
-            secondRotate = dateNow.getSeconds() / 60 * 360 + "deg";
+            hourRotate = dateNow.getHours() * 30 + dateNow.getMinutes() / 2  + dateNow.getSeconds() / 120 + "deg";
+            minuteRotate = dateNow.getMinutes() * 6 + 0.1 * dateNow.getSeconds() + "deg";
+            secondRotate = dateNow.getSeconds() * 6 + "deg";
         } else {
-            $(".hour-hand").show();
-            $(".minute-hand").show();
-            $(".second-hand").show();
+            $(".hour-hand, .minute-hand, .second-hand").show();
         }
 
         $(".hour-hand").transit({

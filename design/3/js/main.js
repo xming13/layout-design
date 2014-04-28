@@ -3,7 +3,7 @@ $(document).ready(function() {
     start(true);
 
     function start(isFirstLoad) {
-        var hourRotate = "+0.0016666666deg";
+        var hourRotate = "+=0.0016666666deg";
         var minuteRotate = "+=0.1deg";
         var secondRotate = "+=6deg";
 
@@ -13,8 +13,8 @@ $(document).ready(function() {
             var minuteNow = dateNow.getMinutes();
             var secondNow = dateNow.getSeconds();
 
-            hourRotate = dateNow.getHours() / 60 * 360 + "deg";
-            minuteRotate = dateNow.getMinutes() / 60 * 360 + "deg";
+            hourRotate = dateNow.getHours() / 12 * 360 + dateNow.getMinutes() / 2  + dateNow.getSeconds() / 120 + "deg";
+            minuteRotate = dateNow.getMinutes() / 60 * 360 + 0.1 * dateNow.getSeconds() + "deg";
             secondRotate = dateNow.getSeconds() / 60 * 360 + "deg";
         } else {
             $(".hour-hand").show();

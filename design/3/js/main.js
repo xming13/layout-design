@@ -2,6 +2,15 @@ $(document).ready(function() {
 
     start(true);
 
+    $(".clock-front").click(function() {
+        $(this).transit({ rotateY: "180deg" });
+        $(".clock-back").transit({ rotateY: "0deg" });
+    });
+    $(".clock-back").click(function() {
+        $(this).transit({ rotateY: "180deg" });
+        $(".clock-front").transit({ rotateY: "0deg" });
+    });
+
     function start(isFirstLoad) {
         var hourRotate = "+=0.0016666666deg";
         var minuteRotate = "+=0.1deg";
@@ -20,13 +29,13 @@ $(document).ready(function() {
             x: "-50%",
             y: "-50%",
             rotate: hourRotate
-        });
+        }, 1000);
 
         $(".minute-hand").transit({
             x: "-50%",
             y: "-50%",
             rotate: minuteRotate
-        });
+        }, 1000);
 
         $(".second-hand").transit({
             x: "-50%",
